@@ -386,3 +386,286 @@ Learned what variables are and how they store data.
 Studied basic C++ data types such as int, float, char, bool, and string.
 Learned arithmetic, relational, and logical operators.
 Practiced performing calculations and comparisons using operators.
+
+
+# Day 3: Control Flow in C++
+
+Today I learned about controlling the flow of a C++ program using decision-making statements and loops.
+
+## 1. If-Else Statement
+
+The `if-else` statement is used to make decisions in a program.
+
+It checks a condition:
+
+* If the condition is true → execute the `if` block
+* If the condition is false → execute the `else` block
+
+### Syntax
+
+```cpp
+if (condition) {
+    // code runs when condition is true
+}
+else {
+    // code runs when condition is false
+}
+```
+
+### Example
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int age = 18;
+
+    if (age >= 18) {
+        cout << "You can vote";
+    }
+    else {
+        cout << "You cannot vote";
+    }
+
+    return 0;
+}
+```
+
+Output:
+
+```
+You can vote
+```
+
+---
+
+# 2. Loops in C++
+
+Loops are used to execute a block of code repeatedly until a condition becomes false.
+
+C++ provides different types of loops:
+
+* `for` loop
+* `while` loop
+* `do-while` loop
+
+---
+
+## For Loop
+
+A `for` loop is used when we know how many times we want to repeat a task.
+
+### Syntax
+
+```cpp
+for(initialization; condition; update) {
+    // code
+}
+```
+
+### Example
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    for(int i = 1; i <= 5; i++) {
+        cout << i << endl;
+    }
+
+    return 0;
+}
+```
+
+Output:
+
+```
+1
+2
+3
+4
+5
+```
+
+---
+
+## While Loop
+
+A `while` loop runs as long as the condition is true.
+
+### Syntax
+
+```cpp
+while(condition) {
+    // code
+}
+```
+
+### Example
+
+```cpp
+int i = 1;
+
+while(i <= 5) {
+    cout << i << endl;
+    i++;
+}
+```
+
+Output:
+
+```
+1
+2
+3
+4
+5
+```
+
+---
+
+## Do-While Loop
+
+A `do-while` loop executes the code at least one time before checking the condition.
+
+### Syntax
+
+```cpp
+do {
+    // code
+}
+while(condition);
+```
+
+Example:
+
+```cpp
+int i = 1;
+
+do {
+    cout << i << endl;
+    i++;
+}
+while(i <= 5);
+```
+
+---
+
+# 3. Break Keyword
+
+The `break` keyword is used to immediately stop a loop.
+
+When `break` executes, the loop ends and control moves outside the loop.
+
+### Example
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    for(int i = 1; i <= 10; i++) {
+
+        if(i == 5) {
+            break;
+        }
+
+        cout << i << endl;
+    }
+
+    return 0;
+}
+```
+
+Output:
+
+```
+1
+2
+3
+4
+```
+
+The loop stopped when `i` became 5.
+
+---
+
+# 4. Nested Loop
+
+A nested loop means a loop inside another loop.
+
+The inner loop runs completely for every single iteration of the outer loop.
+
+### Syntax
+
+```cpp
+for(initialization; condition; update) {
+
+    for(initialization; condition; update) {
+
+        // code
+
+    }
+}
+```
+
+### Example: Printing a Pattern
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    for(int i = 1; i <= 3; i++) {
+
+        for(int j = 1; j <= 3; j++) {
+
+            cout << "* ";
+
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
+```
+
+Output:
+
+```
+* * *
+* * *
+* * *
+```
+
+---
+
+# Key Learning Points
+
+* `if-else` is used for decision making.
+* Loops reduce repeated code.
+* `for` loop is useful when the number of iterations is known.
+* `while` loop is used when the condition controls repetition.
+* `break` stops the loop immediately.
+* Nested loops are used for patterns and matrix-related problems.
+
+---
+
+# Practice Ideas
+
+* Check whether a number is positive or negative.
+* Print numbers from 1 to 100 using loops.
+* Create multiplication tables.
+* Print different star patterns using nested loops.
+
+Day 3 Summary
+
+Today I learned how to control the execution flow of a C++ program.
+I practiced decision-making using if-else, repetition using loops, stopping loops with break, and creating patterns using nested loops.

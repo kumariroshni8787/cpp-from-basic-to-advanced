@@ -2,18 +2,17 @@
 using namespace std;
 
 int main() {
-    bool x = true;
-    bool y = false;
 
-    // Logical AND
-    cout << "x && y = " << (x && y) << endl;
+    for(int i = 1; i <= 5; i++) {
 
-    // Logical OR
-    cout << "x || y = " << (x || y) << endl;
+        for(int j = 1; j <= 5; j++) {
 
-    // Logical NOT
-    cout << "!x = " << (!x) << endl;
-    cout << "!y = " << (!y) << endl;
+            cout << "* ";
+
+        }
+
+        cout << endl;
+    }
 
     return 0;
 }
